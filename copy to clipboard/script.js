@@ -6,8 +6,10 @@ copyBtn.addEventListener('click', () =>{
     let textValue = textarea.value;
     navigator.clipboard.writeText(textValue)
     copyBtn.innerText = "Text Copied!";
+    copyBtn.style.background = '#03A9F4';
+
     setTimeout(()=>{
         copyBtn.innerText = "Copy";
-        copyBtn.style.background = '#03A9F4';
+        copyBtn.style.background = '#83E5FC';
     },1500)
 })
