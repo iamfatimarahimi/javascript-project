@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+::selection{
+    background: #03A9F4;
+}
 *{
     margin: 0;
     padding: 0;
@@ -34,4 +37,7 @@ body{
 }
 .container button{
     background: #83E5FC;
+}
+.container button:hover{
+    cursor: pointer;
 }
