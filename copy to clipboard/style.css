@@ -1,1 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+body{
+    background: #03A9F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.container :where(textarea,button){
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+}
