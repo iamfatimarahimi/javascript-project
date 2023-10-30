@@ -11,5 +11,5 @@ copyBtn.addEventListener('click', () =>{
     setTimeout(()=>{
         copyBtn.innerText = "Copy";
         copyBtn.style.background = '#83E5FC';
-    },1500)
+    },3000)
 })
