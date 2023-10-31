@@ -1,0 +1,5 @@
+body {
+    background: linear-gradient(to right, deeppink, yellow);
+    background-size: 400% 400%;
+    animation: changeBAckground 4s infinite;
+}
