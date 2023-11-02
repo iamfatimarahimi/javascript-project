@@ -1,7 +1,4 @@
-.box{
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    text-align: center;
-    font-size: 30px;
+.calculator__keys {
+    display: grid;
+    /* other necessary CSS */
 }
