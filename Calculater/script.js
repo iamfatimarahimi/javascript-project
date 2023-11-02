@@ -31,4 +31,7 @@ keys.addEventListener('click', e => {
       calculator.dataset.firstValue = displayedNum
       calculator.dataset.operator = action
     }
+    if (action === 'clear') {
+      console.log('clear key!')
+    }
     }}})
