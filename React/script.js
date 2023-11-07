@@ -8,3 +8,5 @@ function myfunction(){
     console.log(b);
 }
 myfunction()
+let age = 25;
+age > 18 ? alert('Age more than 18') : alert('Age Less than 18')
