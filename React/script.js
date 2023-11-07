@@ -13,5 +13,5 @@ let age = 25;
 age > 18 ? alert('Age more than 18') : alert('Age Less than 18')
 
 let result , average = 12.75;
-average >12 ? result='pass' : result='fail'
+result = average >12 ? 'pass' : 'fail'
 console.log(result);
