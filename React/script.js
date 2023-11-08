@@ -1,6 +1,6 @@
-import {myName} from './module2.js';
-import {age} from './module2.js';
-console.log(myName + age);
+import * as Hossien from './module2.js';
+console.log( Hossien.age);
+
 // var firstname;
 // firstname = 'Fatiam';
 // console.log(firstname);
