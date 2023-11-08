@@ -3,4 +3,4 @@
  function coding(){
     console.log('hello world!');
  }
-export{myName, age , coding as fatimaCoding}
+export default coding
