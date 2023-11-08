@@ -1,4 +1,4 @@
 // Arrow functions
-let great = name => console.log(`hello ${name}`);
+let great = name => `hello ${name}`;
 
-great('Fatima')
+console.log(great('Fatima'));
