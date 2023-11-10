@@ -27,7 +27,8 @@ console.log(object3);
  let {Firstname:Esm , id , lastName , age}= user
  console.log(Esm , id , lastName , age);
 //  forEach Method
-let numbers = [1,2,3]
-numbers.forEach(function(number){
-    console.log(number);
-})
+let numbers = [1,2,3,4,5,6,7,8,9,10,11]
+// numbers.forEach(function(number){
+//     console.log(number);
+// })
+numbers.forEach(number => console.log(number));
