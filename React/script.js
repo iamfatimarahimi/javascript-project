@@ -13,3 +13,7 @@ let object1= {
 let object2 = {prop2: 'value2'}
 let object3= {...object1, ...object2}
 console.log(object3);
+// Array destructuring
+ let array = ['fatima' , 23 , true , {id:5} , 'rahimi']
+ let [item1 , item2, ,item3] = array;
+ console.log(item1 , item2,item3);
