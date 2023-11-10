@@ -39,3 +39,6 @@ let numbers = [1,2,3,4,5,6,7,8,9,10,11]
 // Filter method
 let newNumbers =numbers.filter((number)=> number%2 == 0)
 console.log(newNumbers);
+// reduce method
+let result = numbers.reduce((prev , current) => prev + current);
+console.log(result);
