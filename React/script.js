@@ -15,5 +15,5 @@ let object3= {...object1, ...object2}
 console.log(object3);
 // Array destructuring
  let array = ['fatima' , 23 , true , {id:5} , 'rahimi']
- let [item1 , item2, ...item3] = array;
- console.log(item1 , item2,item3);
+ let [item1 , item2, item3 , item4, item5 , item6] = array;
+ console.log(item1 , item2, item3 , item4, item5 , item6);
