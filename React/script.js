@@ -28,10 +28,18 @@ console.log(object3);
  console.log(Esm , id , lastName , age);
 //  forEach Method
 let numbers = [1,2,3,4,5,6,7,8,9,10,11]
+
 // numbers.forEach(function(number){
 //     console.log(number);
 // })
 // numbers.forEach(number => console.log(number));
 // map method
-let newNumbers = numbers.map(num => num*10)
-console.log(newNumbers);
+// let newNumbers = numbers.map(num => num*10)
+// console.log(newNumbers);
+// Filter method
+let NewNumbers = numbers.filter(function(number){
+    if(number % 2 == 0){
+        return number
+    }
+})
+console.log(NewNumbers);
