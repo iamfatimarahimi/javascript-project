@@ -17,3 +17,12 @@ console.log(object3);
  let array = ['fatima' , 23 , true , {id:5} , 'rahimi']
  let [item1 , item2, item3 , item4, item5 , item6] = array;
  console.log(item1 , item2, item3 , item4, item5 , item6);
+ // Object destructuring
+ let user = {
+    Firstname : 'fatiam',
+    id: 5,
+    lastName: 'rahimi',
+    age:25
+ }
+ let {Firstname:Esm , id , lastName , age}= user
+ console.log(Esm , id , lastName , age);
