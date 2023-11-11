@@ -2,11 +2,15 @@
 serif;
 font-family: 'Poppins',
 sans-serif; */
+:root {
+    --font-family1: 'Poppins',sans-serif ;
+    --font-family2: 'Playfair Display',serif;
+}
 .about-section h1{
     font-size: 64px;
     line-height: 88px;
 }
 .about-section p{
     font-size:18px;
-    font-family: 'Poppins',sans-serif;
+    font-family: var(--font-family1);
 }
