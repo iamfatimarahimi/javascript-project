@@ -1,0 +1,12 @@
+/* font-family: 'Playfair Display',
+serif;
+font-family: 'Poppins',
+sans-serif; */
+.about-section h1{
+    font-size: 64px;
+    line-height: 88px;
+}
+.about-section p{
+    font-size:18px;
+    font-family: 'Poppins',sans-serif;
+}
