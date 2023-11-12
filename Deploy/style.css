@@ -6,6 +6,45 @@ sans-serif; */
     --font-family1: 'Poppins',sans-serif ;
     --font-family2: 'Playfair Display',serif;
 }
+h1,h2,h3,h4,h5,h6{
+    color: black;
+    font-family: var(--font-family2);
+    font-weight: bold;
+}
+h1{
+    font-size: 90px;
+}
+p{
+    font-family: var(--font-family1);
+    font-weight: normal;
+}
+.hero{
+    background: #F9F7FE;
+    text-align: center;
+}
+.hero p{
+    font-size: 36;
+    font-weight: bold;
+    margin: 0;
+}
+.hero h2{
+    line-height: 2;
+    font-family: var(--font-family1);
+    font-weight: normal;
+    font-size: 24px;
+}
+.btn-branding{
+    background: #6C63FF;
+    border-radius: 4px;
+    color: white;
+    font-size: 27px;
+    padding: 12px 20px;
+}
+
+
+
+
+
 .about-section h1{
     font-family: var(--font-family2);
     font-size: 64px;
