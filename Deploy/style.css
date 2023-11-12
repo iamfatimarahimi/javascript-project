@@ -5,6 +5,10 @@ sans-serif; */
 :root {
     --font-family1: 'Poppins',sans-serif ;
     --font-family2: 'Playfair Display',serif;
+    --branding-color: #6C63FF;
+}
+body{
+    font-family: var(--font-family1);
 }
 h1,h2,h3,h4,h5,h6{
     color: black;
@@ -21,6 +25,7 @@ p{
 .hero{
     background: #F9F7FE;
     text-align: center;
+    padding: 160px 20px;
 }
 .hero p{
     font-size: 36;
@@ -33,12 +38,12 @@ p{
     font-weight: normal;
     font-size: 24px;
 }
-.btn-branding{
-    background: #6C63FF;
+.btn-bd-primary{
+    background: var(--branding-color);
     border-radius: 4px;
     color: white;
     font-size: 27px;
-    padding: 12px 20px;
+    padding: 15px 30px;
 }
 
 
