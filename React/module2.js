@@ -1,6 +1,3 @@
- let myName = "milad";
- let age = 26;
- function coding(){
-    console.log('hello world!');
- }
-export default coding
+let numbers =[1,2,3,4,5,6]
+numbers.reduce()
+numbers.reduce((prev,current)=>{prev+current})
