@@ -1,0 +1,14 @@
+
+
+
+
+
+.about-section h1{
+    font-family: var(--font-family2);
+    font-size: 64px;
+    line-height: 88px;
+}
+.about-section p{
+    font-size:18px;
+    font-family: var(--font-family1);
+}
