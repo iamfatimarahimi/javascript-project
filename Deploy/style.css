@@ -84,16 +84,25 @@ p{
     padding: 160px 20px;
 }
 
-.content-container h1 {
+.content h1 {
     font-size: 64px;
     line-height: 80px;
 }
 
-.content-container h2 {
+.content h2 {
     font-size: 18px;
     font-family: var(--default-font-family);
 }
-
+.content h3{
+   font-size: 24px;
+   line-height: 1.5;
+   margin: 20px 0 0;
+   font-family: var(--font-family1);
+}
+.content p{
+    font-size: 14px;
+}
 .content{
+    text-align: center;
     margin: 30px;
 }
