@@ -79,6 +79,9 @@ p{
 .logo {
     max-width: 150px;
 }
+nav{
+    padding: 20px 0;
+}
 nav ul{
     padding: 0;
     margin: 0;
@@ -86,10 +89,18 @@ nav ul{
 nav li{
     display: inline;
     list-style: none;
-    
+    margin-left: 10px;
+    line-height: 42px;
 }
 
-
+nav a{
+    text-decoration: none;
+    color: #272142B2 ;
+    transition: all 100ms ease-in-out;
+}
+nav a:hover , nav li.active a{
+    color: var(--branding-color);
+}
 
 .content-container {
     padding: 160px 20px;
