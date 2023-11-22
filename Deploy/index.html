@@ -29,50 +29,80 @@
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <img class="logo" src="../Deploy/AboutPage/images/logo.png" alt="" />
+        <a href="/">
+          <img
+            src="../Deploy/AboutPage/images/logo.png"
+            class="logo d-none d-md-block"
+            alt=""
+          />
+          <img
+            src="../Deploy/AboutPage/images/logo-small.jpg"
+            class="logo d-block d-md-none"
+            alt=""
+          />
+        </a>
         <ul>
-          <li class="active"><a href="../Deploy/index.html">Home</a></li>
-          <li><a href="../Deploy/AboutPage/About.html">About</a></li>
-          <li><a href="../Deploy/Contact/contact.html">Contact</a></li>
+          <li class="active">
+            <a href="#"> Home</a>
+          </li>
+          <li>
+            <a href="../Deploy/AboutPage/About.html"> About</a>
+          </li>
+          <li>
+            <a href="../Deploy/AboutPage/work.html"> Work</a>
+          </li>
+          <li>
+            <a href="../Deploy/AboutPage/contact.html"> Contact</a>
+          </li>
         </ul>
       </nav>
-      <div class="hero">
-        <p>Hello I am</p>
-        <h1>Patricia Pereira</h1>
-        <h2 mb-5>Frontend Developer, based in Portugal.</h2>
-        <div>
-          <a href="#" class="btn btn-branding">Contact Me</a>
-        </div>
+    </div>
+    <div class="hero">
+      <p>👋 Hello, I am</p>
+      <h1>Patricia Pereira</h1>
+      <h2 class="mb-5">Front-end developer based in Portugal</h2>
+      <div>
+        <a href="#" class="btn btn-branding">Contact me</a>
       </div>
-      <p class="text-center m-5">
-        Featured Project which my best projects be choice to show
-      </p>
-
+    </div>
+    <p class="text-center m-5">
+      Featured Project which my best projects be choice to show
+    </p>
+    <div class="container">
       <div class="row mb-5">
-        <!-- Left side -->
         <div class="col d-none d-lg-block">
           <img
-            src="../Deploy/AboutPage/images/Yogurt.png"
+            src="../Deploy/AboutPage/images/yogurt.png"
             class="img-fluid"
             alt=""
           />
         </div>
-        <!-- Right side -->
         <div class="col">
-          <div class="project-description"></div>
-          <h2 class="mb-5">Yogurt Project</h2>
-          <p class="mb-5 text-muted">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by
-          </p>
-          <a href="#" class="btn btn-brandig-outline">View detail project</a>
+          <div class="project-desciption">
+            <h2 class="mb-5">Yogurt Project</h2>
+            <p class="mb-5 text-muted">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by
+            </p>
+            <a href="" class="btn btn-branding-outline"> Learn more </a>
+          </div>
         </div>
       </div>
-
       <div class="row mb-5">
-        <!-- Left side -->
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Weather App</h2>
+            <p class="mb-5 text-muted">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by
+            </p>
+            <a href="" class="btn btn-branding-outline"> Learn more </a>
+          </div>
+        </div>
         <div class="col d-none d-lg-block">
           <img
             src="../Deploy/AboutPage/images/weather.png"
@@ -80,22 +110,8 @@
             alt=""
           />
         </div>
-        <!-- Right side -->
-        <div class="col">
-          <div class="project-description"></div>
-          <h2 class="mb-5">Yogurt Project</h2>
-          <p class="mb-5 text-muted">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by
-          </p>
-          <a href="#" class="btn btn-brandig-outline">View detail project</a>
-        </div>
       </div>
-
-      <div class="row mb-5">
-        <!-- Left side -->
+      <div class="row">
         <div class="col d-none d-lg-block">
           <img
             src="../Deploy/AboutPage/images/dictionary.png"
@@ -103,19 +119,36 @@
             alt=""
           />
         </div>
-        <!-- Right side -->
         <div class="col">
-          <div class="project-description"></div>
-          <h2 class="mb-5">Yogurt Project</h2>
-          <p class="mb-5 text-muted">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by
-          </p>
-          <a href="#" class="btn btn-brandig-outline">View detail project</a>
+          <div class="project-desciption">
+            <h2 class="mb-5">Dictionary App</h2>
+            <p class="mb-5 text-muted">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by
+            </p>
+            <a href="" class="btn btn-branding-outline"> Learn more </a>
+          </div>
         </div>
       </div>
+      <footer>
+        <a
+          class="text-decoration-none text-dark"
+          href="mailto:patricia@gmail.com"
+          >patricia@gmail.com</a
+        >
+        <a href="https://www.github.com/patricia" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instragram.com/patricia" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com/patricia" target="_blank">
+          <i class="fab fa-twitter" style="color: #8909f1;" ></i>
+        </a>
+      </footer>
     </div>
   </body>
 </html>
+<i class="fa-brands fa-github" "></i>
