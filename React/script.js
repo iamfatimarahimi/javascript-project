@@ -42,3 +42,6 @@ console.log(newNumbers);
 // reduce method
 let result = numbers.reduce((prev , current) => prev + current);
 console.log(result);
+numbers.reduce(()=>{
+    console.log('milad');
+})
