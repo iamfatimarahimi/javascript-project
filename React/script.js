@@ -49,4 +49,11 @@ let button = document.querySelector('button')
 button.addEventListener('click' , function(){
     console.log(this);
 })
-let user = 
+let carbar = {
+    fname: 'fatima',
+    lname: 'rahimi',
+    showFullName: function(){
+        console.log(this.fname , this.lname);
+    }
+}
+carbar.showFullName()
