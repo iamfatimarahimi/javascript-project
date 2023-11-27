@@ -72,4 +72,4 @@ let myObject = {
     }
 }
 let fullName = myObject.ShowFullName.bind(myObject)
-console.log(fullName);
+fullName()
