@@ -45,10 +45,10 @@ console.log(result);
 numbers.reduce(()=>{
     console.log('milad');
 })
-let button = document.querySelector('button')
-button.addEventListener('click' , function(){
-    console.log(this);
-})
+// let button = document.querySelector('button')
+// button.addEventListener('click' , function(){
+//     console.log(this);
+// })
 let carbar = {
     fname: 'fatima',
     lname: 'rahimi',
@@ -57,3 +57,7 @@ let carbar = {
     }
 }
 carbar.showFullName()
+// we can give any argument to below function
+function clickHandler(param){
+    console.log(param);
+}
