@@ -45,3 +45,8 @@ console.log(result);
 numbers.reduce(()=>{
     console.log('milad');
 })
+let button = document.querySelector('button')
+button.addEventListener('click' , function(){
+    console.log(this);
+})
+let user = 
