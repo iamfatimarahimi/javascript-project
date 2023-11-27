@@ -61,3 +61,15 @@ carbar.showFullName()
 function clickHandler(param){
     console.log(param);
 }
+let myObject = {
+    FistName : 'zahra',
+    LastName: 'Bahrami',
+    myMethod: function(){
+        console.log(this);
+    },
+    ShowFullName : function(){
+        console.log(this.FistName , this.LastName);
+    }
+}
+let fullName = myObject.ShowFullName.bind(myObject)
+console.log(fullName);
