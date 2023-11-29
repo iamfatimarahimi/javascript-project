@@ -24,30 +24,56 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="content-container conitainer">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Patricia Logo"
+          />
+          <img
+            src="images/logo-small.jpg"
+            class="logo d-block d-md-none"
+            alt="Patricia Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="../index.html" title="Home Page"> Home</a>
+          </li>
+          <li class="active">
+            <a href="../AboutPage/About.html " title="About Page"> About</a>
+          </li>
+          <li>
+            <a href="../Work/work.html" title="Work Page"> Work</a>
+          </li>
+          <li>
+            <a href="../Contact/contact.html" title="Contact Page"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="about-section container">
       <div class="row">
-        <div class="colo-6">
-          <div class="content">
-            <h1>Hi I am Patricia Pereira</h1>
-            <h2>Frontend Developer, based in Portugal.</h2>
-            <p>
+        <div class="col-lg-6">
+          <div class="about-section-content">
+            <h1 class="mb-4">Hi I am Patricia Pereira</h1>
+            <h2 class="mb-4">Frontend Developer, based in Portugal.</h2>
+            <p class="mb-5">
               For anyone who wants to start learning code, this workshop is very
               interesting. You will be challenged with different exercises, and
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="#">View all project</a>
+            <a href="" class="btn btn-branding">See my projects</a>
           </div>
         </div>
-        <div class="col-6">
-          <img
-            class="img-fluid"
-            src="images/Group 18.png"
-            alt="Patricia picture"
-          />
+        <div class="col-lg-6">
+          <img src="images/Group 18.png" alt="" class="img-fluid" />
         </div>
       </div>
     </div>

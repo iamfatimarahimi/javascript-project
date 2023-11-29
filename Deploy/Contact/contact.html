@@ -4,16 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conatct Page</title>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <nav>
-      <img class="logo" src="../AboutPage/images/logo.png" alt="" />
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="../AboutPage/images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Patricia Logo"
+          />
+          <img
+            src="../AboutPage/images/logo-small.jpg"
+            class="logo d-block d-md-none"
+            alt="Patricia Logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="../index.html" title="Home Page"> Home</a>
+          </li>
+          <li>
+            <a href="../AboutPage/About.html " title="About Page"> About</a>
+          </li>
+          <li>
+            <a href="../Work/work.html" title="Work Page"> Work</a>
+          </li>
+          <li>
+            <a href="../Contact/contact.html" title="Contact Page"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Let's get in touch!</h1>
