@@ -64,12 +64,14 @@ function clickHandler(param){
 let myObject = {
     FistName : 'zahra',
     LastName: 'Bahrami',
-    myMethod: function(){
-        console.log(this);
-    },
     ShowFullName : function(){
         console.log(this.FistName , this.LastName);
     }
 }
-let fullName = myObject.ShowFullName.bind(myObject)
+let me = {
+    FistName : 'Ali',
+    LastName: 'Karimi',
+}
+let fullName = myObject.ShowFullName.bind(me)
+
 fullName()
