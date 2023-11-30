@@ -38,10 +38,7 @@ sans-serif; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #0b061f; */
-    background-image: url(images/imgur_com.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #0b061f;
 }
 .text {
     position: relative;
@@ -52,7 +49,6 @@ sans-serif; */
     font-weight: 100;
     animation: animateText 5s linear infinite;
 }
-
 /* Light Part */
 @keyframes animateText {
 
