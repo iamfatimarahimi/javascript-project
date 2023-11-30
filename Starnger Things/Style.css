@@ -16,12 +16,9 @@ sans-serif; */
     font-family: 'Poppins',sans-serif;
     background: #0b061f;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 .navigation li{
     display: inline-block;
-    
     padding: 20px 20px;
 }
 .navigation li a {
@@ -29,9 +26,9 @@ sans-serif; */
     list-style-type: none;
     text-decoration: none;
 }
-.navigation a :hover{
+.navigation li  :hover{
     color: #c10a0a;
-
+    transition: all 180ms ease-in-out;
 }
 .banner {
     position: absolute;
@@ -41,7 +38,10 @@ sans-serif; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0b061f;
+    /* background: #0b061f; */
+    background-image: url(images/imgur_com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .text {
     position: relative;
