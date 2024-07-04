@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    overflow: hidden;
-}
 .container{
     margin-top: 20px;
     border-left: 1px solid rgb(138, 137, 137);
@@ -57,9 +54,10 @@ p{
 .accordion.show .accordion-body {
     display: block;
 }
-.text{
+#text{
     display: none; 
 }
+
 .link{
     text-decoration: none;
     color: rgb(29, 126, 42);

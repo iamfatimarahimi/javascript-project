@@ -26,11 +26,7 @@
 // let myTimer2 = setTimeout(actionShowSec3, 10000);
 
 // // stops the timer when clicks on them
-// function stopTimer1(){
-//     clearTimeout(myTimer1 , myTimer2);
-//     document.getElementById("section2").style.display = "block";
-
-// }
+// 
 // function stopTimer2(){
 //     clearTimeout(myTimer1 , myTimer2);
 //     document.getElementById("section1").style.display = "none";
@@ -59,14 +55,16 @@
 // console.groupEnd();
 
 
-const Paragraph = document.getElementsByClassName("text")
-const demo = document.getElementById("demo")
+const Paragraph = document.getElementById("text").innerHTML;
+document.getElementById("demo").innerHTML = Paragraph;
 const accordions = document.querySelectorAll(".accordion");
     for (const accordion of accordions) {
     accordion.addEventListener("click", function() { 
         const activeAccordion = document.querySelector(".accordion.show")
+        // const Paragraph = document.querySelector(".accordion.text")
         activeAccordion.classList.remove("show")
         accordion.classList.add("show")
+        clearTimeout(myTimeout);
     })
     function actionAutoOpen(){
         for(let i = 0; i<accordions.length; i++){
@@ -75,9 +73,6 @@ const accordions = document.querySelectorAll(".accordion");
             
         }
         // accordionO.classList.add("show")
-        // demo.innerHTML = Paragraph.text;
     }
-    demo.innerText = Paragraph.text;
+    let myTimeout = setTimeout(actionAutoOpen, 3000);
 }
-
-let myTimer = setTimeout(actionAutoOpen, 3000);
