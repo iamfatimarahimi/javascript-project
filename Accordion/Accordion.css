@@ -1,70 +1,91 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.container{
-    margin-top: 20px;
-    border-left: 1px solid rgb(138, 137, 137);
-    padding: 15px;
+body {
+  overflow-x: hidden;
+  border-left: 1px solid rgb(138, 137, 137);
 }
- .left{
-    width: 50%;
+.container {
+  margin-top: 20px;
 
+  padding: 15px;
+  height: 100%;
 }
-.right{
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    text-align: center;
-
+.left {
+  width: 50%;
 }
-.right button{
-    margin: 25px;
-    border-radius: 4px;
-    border: none;
-    background: rgb(169, 170, 169);;
-    padding: 10px 25px;
+.border {
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  width: 2px;
+  background: #212529;
+  opacity: 0.8;
 }
-.right p{
-    padding: 25px;
-    text-align: justify;
+.right {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  right: 25px;
+  top: 30px;
 }
-.icon{
-    font-size: 20px;
+.right button {
+  margin: 10px;
+  border: none;
+  background: #efefef;
+  padding: 10px 40px;
 }
-h1{
-    color: rgb(66, 66, 66);
-    margin-top: 20px;
-}
-h1:hover{
+.right button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     cursor: pointer;
 }
-
-p{
-    color: rgb(112, 112, 112);
+.icon {
+  position: relative;
+  top: 7px;
+  margin-left: 10px;
+  font-size: 20px;
 }
-
+h1 {
+  font-weight: 100;
+  color: rgb(66, 66, 66);
+  margin-top: 20px;
+}
+h1:hover {
+  cursor: pointer;
+}
+p {
+  color: rgb(112, 112, 112);
+}
+.text {
+    display: none;
+  }
 .accordion .accordion-body {
-    display: none; 
+  display: none;
 }
 
 .accordion.show .accordion-body {
-    display: block;
+  display: block;
 }
-#text{
-    display: none; 
+.link {
+  text-decoration: none;
+  color: rgb(29, 126, 42);
+  font-weight: bold;
 }
-
-.link{
-    text-decoration: none;
-    color: rgb(29, 126, 42);
-    font-weight: bold;
+.number {
+  font-size: 50px;
+  font-weight: bold;
 }
-.close-arrow{
-    text-align: right;
-    font-size: 20px;
-    cursor: pointer;
+.h1:focus-visible {
+  color: green;
+}
+.circle {
+  color: green;
+}
+.bx {
+  position: relative;
+  left: -14px;
+  font-size: 30px;
+  margin-right: 15px;
 }
