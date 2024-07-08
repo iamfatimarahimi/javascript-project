@@ -55,24 +55,40 @@
 // console.groupEnd();
 
 
-const Paragraph = document.getElementById("text").innerHTML;
-document.getElementById("demo").innerHTML = Paragraph;
 const accordions = document.querySelectorAll(".accordion");
-    for (const accordion of accordions) {
-    accordion.addEventListener("click", function() { 
-        const activeAccordion = document.querySelector(".accordion.show")
-        // const Paragraph = document.querySelector(".accordion.text")
-        activeAccordion.classList.remove("show")
-        accordion.classList.add("show")
-        clearTimeout(myTimeout);
-    })
-    function actionAutoOpen(){
-        for(let i = 0; i<accordions.length; i++){
-           const accordionO = accordions[i];
-            accordionO.classList.add("show")
-            
-        }
-        // accordionO.classList.add("show")
-    }
-    let myTimeout = setTimeout(actionAutoOpen, 3000);
+let myTimeout = setInterval(actionAutoOpen, 3000);
+
+for (const accordion of accordions) {
+  accordion.addEventListener("click", function () {
+    // stop timer
+    clearInterval(myTimeout);
+    // accordion & icon color showing
+    const activeAccordion = document.querySelector(".accordion.show");
+    activeAccordion?.classList.remove("show");
+    activeAccordion?.classList.remove("circle");
+    accordion.classList.add("show");
+    accordion.classList.add("circle");
+    // Paragraph showing
+    const Paragraph = accordion.querySelector(".text");
+    document.querySelector("#demo").innerHTML = Paragraph.textContent;
+  });
+}
+
+function actionAutoOpen() {
+  const activeAccordion = document.querySelector(".accordion.show");
+  const activeAccordionIndex = [...accordions].indexOf(activeAccordion);
+  let Paragraph;
+  if (accordions.length - 1 === activeAccordionIndex) {
+    accordions[0].classList.add("show");
+    Paragraph = accordions[0].querySelector(".text");
+    accordions[0].classList.add("circle");
+  } else {
+    accordions[activeAccordionIndex + 1].classList.add("show");
+    Paragraph = accordions[activeAccordionIndex + 1].querySelector(".text");
+    accordions[activeAccordionIndex + 1].classList.add("circle");
+  }
+  accordions[0].querySelector(".text").classList.add("show");
+  activeAccordion?.classList.remove("show");
+  activeAccordion?.classList.remove("circle");
+  document.querySelector("#demo").innerHTML = Paragraph?.textContent;
 }
